@@ -6,9 +6,14 @@
   <head>
   </head>
   <body ng-controller="wordController">
+    <di>
+    <div>
+      <ul>
+        <li ng-repeat="item in words"><span ng-click="tocall">{{item.word}}</span>: <span ng-hide="tab">{{item.definition}}</span></li>
+      </ul>
+    </div>
 
     <div>
-      <ul></ul>
     </div>
 
     <script src="js/vendor/angular.js"></script>
